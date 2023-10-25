@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h2>Calculator</h2>
+    <div class="input">
+        <input type="text" name="text" id="input" placeholder="0" />
+
+    </div>
+    <div class="container">
+      <table class="mytable">
+        <tr>
+          <td onclick="backspace()">C</td>
+          <td onclick="allclear()">AC</td>
+          <td onclick="inputvalue('/')" value="/" >/</td>
+          <td onclick="inputvalue('*')" value="*">*</td>
+        </tr>
+        <tr>
+          <td onclick="inputvalue('7')" value="7">7</td>
+            <td onclick="inputvalue('8')" value="8">8</td>
+            <td onclick="inputvalue('9')" value="9">9</td>
+          <td onclick="calculate()" >=</td>
+        </tr>
+        <tr>
+            <td onclick="inputvalue('4')" value="4">4</td>
+            <td onclick="inputvalue('5')" value="5">5</td>
+            <td onclick="inputvalue('6')" value="6">6</td>
+            <td onclick="inputvalue('-')" value="-">-</td>
+        </tr>
+        <tr>
+            <td onclick="inputvalue('1')" value="1">1</td>
+            <td onclick="inputvalue('2')" value="2">2</td>
+            <td onclick="inputvalue('3')" value="3">3</td>
+            <td rowspan="2" onclick="inputvalue('+')" value="+">+</td>
+        </tr>
+        <tr>
+          <td colspan="2" onclick="inputvalue('0')" value="0">0</td>
+            <td onclick="inputvalue('.')" value=".">.</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
